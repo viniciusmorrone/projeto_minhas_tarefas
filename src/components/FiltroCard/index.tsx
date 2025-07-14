@@ -32,10 +32,12 @@ const FiltroCard = ({ legenda, criterio, valor }: Props) => {
   }
 
   const filtrar = () => {
-    dispatch(alterarFiltro({
-      criterio,
-      valor
-    }))
+    dispatch(
+      alterarFiltro({
+        criterio,
+        valor
+      })
+    )
   }
 
   const contador = contarTarefas()

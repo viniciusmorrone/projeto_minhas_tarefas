@@ -35,19 +35,21 @@ const Formulario = () => {
     <MainContainer>
       <Titulo>Nova tarefa</Titulo>
       <Form onSubmit={cadastrarTarefa}>
-        <Campo value={titulo}
+        <Campo
+          value={titulo}
           onChange={(evento) => setTitulo(evento.target.value)}
           type="text"
           placeholder="Título"
         />
-        <Campo value={descricao}
+        <Campo
+          value={descricao}
           onChange={({ target }) => setDescricao(target.value)}
           as="textarea"
           placeholder="Descrição da tarefa"
         />
         <Opcoes>
           <p>Prioridade</p>
-          {Object.values(enums.Prioridade).map(prioridade => (
+          {Object.values(enums.Prioridade).map((prioridade) => (
             <Opcao key={prioridade}>
               <input
                 value={prioridade}

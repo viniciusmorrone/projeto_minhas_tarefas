@@ -10,7 +10,7 @@ const initialState: TarefasState = {
   itens: [
     {
       id: 1,
-      descricao: 'Estudar JavaScript revendoo exercício do módulo 7',
+      descricao: 'Estudar JavaScript revendo o exercício do módulo 7',
       prioridade: enums.Prioridade.NORMAL,
       status: enums.Status.CONCLUIDA,
       titulo: 'Estudar JavaScript'
@@ -51,13 +51,13 @@ const tarefasSlice = createSlice({
       }
     },
     cadastrar: (state, action: PayloadAction<Omit<Tarefa, 'id'>>) => {
-      const tarefasJaExiste = state.itens.find(
+      const tarefaJaExiste = state.itens.find(
         (tarefa) =>
           tarefa.titulo.toLowerCase() === action.payload.titulo.toLowerCase()
       )
 
-      if (tarefasJaExiste) {
-        alert('Já existe uma tarefa com este nome.')
+      if (tarefaJaExiste) {
+        alert('Já existe uma tarefa com esse nome')
       } else {
         const ultimaTarefa = state.itens[state.itens.length - 1]
 

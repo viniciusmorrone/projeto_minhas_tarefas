@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from 'react'
+import { useState, useEffect, ChangeEvent } from 'react'
 import { useDispatch } from 'react-redux'
 
 import * as S from './styles'

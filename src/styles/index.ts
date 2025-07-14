@@ -36,18 +36,18 @@ export const Campo = styled.input`
   border-radius: 8px;
   font-weight: bold;
   color: #666666;
-  border-color: #666666
+  border-color: #666666;
   width: 100%;
 `
 
 export const Botao = styled.button`
-  font-size: 12px;
   font-weight: bold;
+  font-size: 12px;
   color: #fff;
   padding: 8px 12px;
   border: none;
   cursor: pointer;
-  background-color: #${variaveis.azulEscuro};
+  background-color: ${variaveis.azulEscuro};
   border-radius: 8px;
   margin-right: 8px;
 `
